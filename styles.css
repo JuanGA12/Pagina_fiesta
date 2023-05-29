@@ -1,0 +1,27 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #05ab4d;
+    flex-wrap: nowrap;
+}
+
+#random-text {
+    font-size: 50px;
+    color: #0535a4;
+    transform: scale(1);
+    transition: transform 1s;
+}
+p{
+    text-align: center;
+}
+/* 
+#random-text:hover {
+    transform: scale(1.5);
+} */
+@media (max-width: 600px) {
+    p {
+        font-size: 30px !important;
+    }
+}
