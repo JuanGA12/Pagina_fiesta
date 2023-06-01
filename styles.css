@@ -5,6 +5,8 @@ body {
     height: 100vh;
     background-color: #05ab4d;
     flex-wrap: nowrap;
+    flex-direction: column;
+    padding: 0 10px 0 10px;
 }
 
 #random-text {
@@ -13,15 +15,34 @@ body {
     transform: scale(1);
     transition: transform 1s;
 }
+#generate-button{
+    background-color: #0535a4;
+    color: white;
+    cursor: pointer;
+    border-radius: 50%;
+    height: 80px;
+    width: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    transform: scale(1);
+    transition: transform 1s;
+}
 p{
     text-align: center;
 }
-/* 
-#random-text:hover {
-    transform: scale(1.5);
-} */
+
+#generate-button:hover {
+    /* transform: scale(1.2); */
+    outline-offset: 3px;
+    outline: 3px solid #0535a4;
+} 
 @media (max-width: 600px) {
     p {
         font-size: 30px !important;
+    }
+    #generate-button{
+        font-size: 20px !important;
     }
 }
